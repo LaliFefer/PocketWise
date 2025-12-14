@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj": {}
+    "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj": {
+    "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj",
         "projectName": "PocketWise.API",
-        "projectPath": "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise\\PocketWise.API\\PocketWise.API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise.API\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\pocket wise\\PocketWise\\PocketWise\\PocketWise.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,7 +58,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[8.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

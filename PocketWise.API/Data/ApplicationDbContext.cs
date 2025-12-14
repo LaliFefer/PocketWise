@@ -11,7 +11,15 @@ namespace PocketWise.API.Data
             : base(options)
         {
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // הגדרת הדיוק (Precision) של השדה Amount ל-Decimal(18, 2)
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.Amount)
+                .HasPrecision(18, 2);
 
+            base.OnModelCreating(modelBuilder);
+        }
         // DbSet מייצג את טבלת ה-Transactions במסד הנתונים.
         public DbSet<Transaction> Transactions { get; set; }
     }

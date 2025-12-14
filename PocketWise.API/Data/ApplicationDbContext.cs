@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PocketWise.API.Models; // ייבוא המחלקה Transaction
+using PocketWise.API.Models; // ייבוא המחלקות Category ו-Transaction
 
 namespace PocketWise.API.Data
 {
     // המחלקה יורשת מ-DbContext כדי שתהיה מנוע Entity Framework
+    // ודאי ששם המחלקה הוא *ApplicationDbContext* (כפי שהגדירו מפתחת א')
     public class ApplicationDbContext : DbContext
     {
         // הקונסטרקטור – נדרש על ידי EF Core 
@@ -11,7 +12,17 @@ namespace PocketWise.API.Data
             : base(options)
         {
         }
+
+        // --- הוספת ה-DbSets (מייצגים את הטבלאות ב-DB) ---
+
+        // DbSet של מפתחת א' ל-Transactions
+        public DbSet<Transaction> Transactions { get; set; }
+
+        // DbSet שלך ל-Categories
         public DbSet<Category> Categories { get; set; }
+
+
+        // --- המתודה ליצירת מודל והוספת Seed Data ---
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder); // השאירי את הקריאה ל-base
@@ -27,8 +38,8 @@ namespace PocketWise.API.Data
                 new Category { Id = 4, Name = "משכורת", Icon = "account_balance_wallet", Color = "#FFA500", IsIncome = true },
                 new Category { Id = 5, Name = "מתנות", Icon = "card_giftcard", Color = "#8A2BE2", IsIncome = true }
             );
+
+            // ודאי שכל ה-Seed Data של מפתחת א' ל-Transaction (אם קיים) נשאר כאן!
         }
-        // DbSet מייצג את טבלת ה-Transactions במסד הנתונים.
-        public DbSet<Transaction> Transactions { get; set; }
     }
 }

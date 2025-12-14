@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PocketWise.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f865bd105ddecd42edeb643f890ebe60d916949")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b39e3bff98954a0aadc0ac5fc679e250aec4c3bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("PocketWise.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PocketWise.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
